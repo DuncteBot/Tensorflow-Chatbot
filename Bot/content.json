@@ -10,7 +10,7 @@
          "context_set": ""
         },
         {"tag": "5",
-         "patterns": ["Who is your master?", "who created you?", "who is your owner?"],
+         "patterns": ["Who is your master?", "who created you?", "who is your owner?", "Who made you?"],
          "responses": ["I was created by duncte123, ramidzkh and Sanduhr32.", "That are duncte123, ramidzkh and Sanduhr32.", "My creators? That are duncte123, ramidzkh and Sanduhr32."],
          "context_set": ""
         },

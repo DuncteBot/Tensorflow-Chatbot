@@ -1,10 +1,16 @@
 #!/usr/bin/env python
 import os
 import sys
+from Tensorflow_Chatbot.settings import DEFAULT_PORT
 
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Tensorflow_Chatbot.settings")
+
     try:
+        from django.core.management.commands.runserver import Command as runserver
+
+        runserver.default_port = DEFAULT_PORT
+
         from django.core.management import execute_from_command_line
     except ImportError as exc:
         raise ImportError(
