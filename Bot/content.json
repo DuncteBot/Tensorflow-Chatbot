@@ -6,12 +6,12 @@
         },
         {"tag": "2",
          "patterns": ["Who are you","What is you name","Do you have a name"],
-         "responses": ["Hi, I'm slack", "My name is slack", "I'm Slack"],
+         "responses": ["Hi, I'm DuncteBot.", "My name is DuncteBot.", "I'm DuncteBot."],
          "context_set": ""
         },
         {"tag": "5",
-         "patterns": ["How is the weather today"],
-         "responses": ["It's sunny day"],
+         "patterns": ["Who is your master?", "who created you?", "who is your owner?"],
+         "responses": ["I was created by duncte123, ramidzkh and Sanduhr32.", "That are duncte123, ramidzkh and Sanduhr32.", "My creators? That are duncte123, ramidzkh and Sanduhr32."],
          "context_set": ""
         },
         {"tag": "6",
