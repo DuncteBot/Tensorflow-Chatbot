@@ -10,7 +10,7 @@ def index(request):
             jsonData = json.loads(request.body.decode('utf-8'))
             msg = jsonData["msg"]
             user_id = jsonData["user_id"]
-            res = bot.ChatBot.getBot().response(sentence=msg, userID=user_id)
+            res = bot.ChatBot.getBot().response(sentence=msg, user_id=user_id, show_details=True)
             time = strftime("%Y-%m-%d %H:%M:%S", gmtime())
             return JsonResponse({
                 "desc": "Success",

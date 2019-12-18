@@ -68,7 +68,7 @@ class ChatBot(object):
             return_list.append((self.classes[r[0]], r[1]))
         return return_list
 
-    def response(self, sentence, userID='111', show_details=False):
+    def response(self, sentence, user_id='111', show_details=False):
         results = self.classify(sentence)
         context = {}
         if results:
@@ -77,11 +77,11 @@ class ChatBot(object):
                     if i['tag'] == results[0][0]:
                         if 'context_set' in i:
                             if show_details: print('context:', i['context_set'])
-                            context[userID] = i['context_set']
+                            context[user_id] = i['context_set']
                         if not 'context_filter' in i or \
-                                (userID in context and 'context_filter' in i and i['context_filter'] ==
+                                (user_id in context and 'context_filter' in i and i['context_filter'] ==
                                  context[
-                                     userID]):
+                                     user_id]):
                             if show_details: print('tag:', i['tag'])
                             return random.choice(i['responses'])
                 return "I can't guess"
